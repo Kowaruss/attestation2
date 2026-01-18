@@ -2,17 +2,20 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Вход</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div class="container">
+  <div class="login-container">
     <h2>Вход</h2>
-    <input type="text" placeholder="Логин" id="login">
-    <input type="password" placeholder="Пароль" id="password">
-    <button onclick="login()">Войти</button>
-    <button class="register" onclick="register()">Зарегистрироваться</button>
+
+    <input type="text" id="login" placeholder="Логин">
+    <input type="password" id="password" placeholder="Пароль">
+
+    <button id="loginBtn">Войти</button>
+    <button id="registerBtn">Регистрация</button>
+
+    <p id="error" class="error"></p>
   </div>
 
   <script src="index.js"></script>
