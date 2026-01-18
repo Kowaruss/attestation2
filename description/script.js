@@ -22,5 +22,5 @@ logoutBtn.addEventListener("click", () => {
 });
 
 startBtn.addEventListener("click", () => {
-  window.location.href = "../stage1-bet-counter/index.html";
+  window.location.href = "../stage1/index.html";
 });
