@@ -18,11 +18,11 @@ let timeLeft = 360; // 6 минут
 let timerInterval;
 
 const images = [
-  "1345.jpg",
-  "827.jpg",
-  "56.jpg",
-  "9012.jpg",
-  "300.jpg"
+  "1234.jpg",
+  "2341.jpg",
+  "3412.jpg",
+  "4123.jpg",
+  "555.jpg"
 ];
 
 function startTimer() {
