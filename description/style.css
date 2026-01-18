@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1e1e1e;
+  color: white;
+  margin: 0;
+}
+
+header {
+  background: #2c2c2c;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: #3a3a3a;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  padding: 30px;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
