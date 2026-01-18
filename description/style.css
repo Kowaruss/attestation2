@@ -31,7 +31,12 @@ header {
 }
 
 main {
+  max-width: 600px;
+  margin: 40px auto;
   padding: 30px;
+  background: #2c2c2c;
+  border-radius: 10px;
+  text-align: center;
 }
 
 button {
