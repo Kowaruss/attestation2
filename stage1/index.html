@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Этап 1 — Счет ставок</title>
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Попап -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h2>Тест</h2>
+    <p>
+      На экране будет открываться фото ставки. Надо посчитать и записать ответ в поле для ответа.
+      Как только прочитаешь нажми кнопку “Далее”. Появится следующая ставка.
+      Всего ставок 5. Время общее на все 5 ставок.
+      По истечении таймера этап завершается автоматически.
+      Непосчитанные ставки засчитываются как ошибки.
+    </p>
+    <button id="startTestBtn">Понял. Приступить</button>
+  </div>
+</div>
+
+<!-- Таймер -->
+<div class="timer" id="timer">06:00</div>
+
+<!-- Основной контейнер -->
+<main class="container hidden" id="mainContent">
+  <h2 id="counter">Ставка 1 из 5</h2>
+
+  <img id="betImage" src="" alt="Ставка">
+
+  <input type="text" id="answerInput" placeholder="Введите ответ">
+
+  <button id="nextBtn">Далее</button>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
 
