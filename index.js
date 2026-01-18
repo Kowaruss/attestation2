@@ -1,14 +1,26 @@
-function login() {
-  const login = document.getElementById("login").value;
-  const password = document.getElementById("password").value;
+const loginInput = document.getElementById("login");
+const passwordInput = document.getElementById("password");
+const loginBtn = document.getElementById("loginBtn");
+const registerBtn = document.getElementById("registerBtn");
+const errorText = document.getElementById("error");
+
+if (localStorage.getItem("isAuth") === "true") {
+  window.location.href = "description/index.html";
+}
+
+loginBtn.addEventListener("click", () => {
+  const login = loginInput.value;
+  const password = passwordInput.value;
 
   if (login === "admin" && password === "admin") {
-    window.location.href = "../next/";
+    localStorage.setItem("isAuth", "true");
+    localStorage.setItem("username", login);
+    window.location.href = "description/index.html";
   } else {
-    alert("Неверный логин или пароль");
+    errorText.textContent = "Неверный логин или пароль";
   }
-}
+});
 
-function register() {
-  alert("Регистрация пока не реализована");
-}
+registerBtn.addEventListener("click", () => {
+  alert("Данная функция пока не реализована. Используйте пароль admin и логин admin");
+});
