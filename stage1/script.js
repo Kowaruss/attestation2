@@ -88,9 +88,17 @@ function finishStage() {
   const unanswered = TOTAL_BETS - (correct + wrong);
   wrong += unanswered;
 
+  const spentSeconds = 360 - timeLeft;
+  const minutes = Math.floor(spentSeconds / 60);
+  const seconds = spentSeconds % 60;
+  const formattedTime = `${minutes} мин ${seconds} сек`;
+
+  localStorage.setItem("stage1_errors", wrong);
+  localStorage.setItem("stage1_time", formattedTime);
+
   nextBtn.textContent = "Завершить этап";
   nextBtn.onclick = () => {
-    window.location.href = "../stage2/index.html";
+    window.location.href = "result.html";
   };
 }
 
@@ -101,4 +109,3 @@ startTestBtn.addEventListener("click", () => {
   startTimer();
   loadNextBet();
 });
-
