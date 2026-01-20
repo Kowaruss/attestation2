@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Результат этапа 1</title>
+  <link rel="stylesheet" href="../assets/css/common.css">
+</head>
+<body>
+
+  <main class="container">
+    <h2>Вы прошли первый этап аттестации</h2>
+    <p>Ошибок: <span id="errors"></span></p>
+    <p>Время: <span id="time"></span></p>
+
+    <button id="nextStageBtn">Перейти к этапу 2</button>
+  </main>
+
+  <script>
+    const errors = localStorage.getItem("stage1_errors");
+    const time = localStorage.getItem("stage1_time");
+
+    document.getElementById("errors").textContent = errors;
+    document.getElementById("time").textContent = time;
+
+    document.getElementById("nextStageBtn").addEventListener("click", () => {
+      window.location.href = "../stage2/index.html";
+    });
+  </script>
+
+</body>
+</html>
